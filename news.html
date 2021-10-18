@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "container"></div>
+</body>
+</html>
+<script>
+    async function getnews(){
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=396c5457c306470294820130bdaebee5`);
+        let data = await res.json();
+        console.log(data.articles);
+    }
+
+    function shownews(){
+
+    }
+</script>
